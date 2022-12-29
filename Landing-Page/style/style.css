@@ -1,0 +1,145 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;   
+    background: rgb(21,19,45);
+    /* background: radial-gradient(circle, rgba(21,19,45,1) 0%, rgba(24,24,39,1) 34%, rgba(25,33,35,1) 100%); */
+}
+
+/* Nav Bar  */
+.navbar-brand {
+    margin-left: 1rem;
+    width: 20px;
+    size: 3px;
+}
+.navbar-nav {
+    margin-right: 1rem;
+}
+.nav-item {
+    padding: 0 1rem;
+}
+.nav-link:hover {
+    color:#fffefe;
+    border-bottom: 1px solid salmon;
+}
+
+
+/* Title  */
+.hero-text {
+    font-size: 4rem;
+    /* font-weight: 900; */
+    padding: 2rem 2rem 0rem 2rem;
+    width:55%;
+    margin: 0 auto;
+    /* letter-spacing: 2px; */
+    color: #fffefe;
+    line-height: 90px;
+}
+.tagline {
+    color: rgb(143, 144, 145);
+    width: 55%;
+    margin: 1rem auto;
+    padding: 0 2rem 0rem 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.signup-div {
+    width: 30%;
+    margin: 2.3rem auto;
+
+}
+.signup-btn {
+    background: rgb(84,81,79);
+    background: radial-gradient(circle, rgb(182, 101, 43) 0%, rgba(255,63,10,0.7369431781501663) 30%, rgb(16, 49, 95) 100%);
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: white;            
+    box-shadow: 0 0 15px #eee;
+    border-color:#eee;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+
+      .signup-btn:hover {
+
+        background-color: fffef1;
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .eth-img {
+        width: 7rem;
+        position:absolute;
+        left:6rem;
+        bottom: 15rem;
+      }
+      .bitcoin-img {
+        width: 7rem;
+        position: absolute;
+        right:4rem;
+        bottom: 5rem;
+      }
+
+    
+               
+      
+/* Middle section  */
+.feature-card {
+    /* background-color:rgb(29, 26, 55); */
+    background: #0C2147;
+    background: -webkit-radial-gradient(right, #0C2147, #15132D);
+    background: -moz-radial-gradient(right, #0C2147, #15132D);
+    background: radial-gradient(to left, #0C2147, #15132D);
+    color: white;
+    border-radius: 10px;
+}
+.card-title {
+    font-size: 48px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.cutodial-img {
+    width: 600px;
+}
+.card-text {
+    color:#abaaaa;
+}
+.feature-card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(98, 85, 173, 0.3);
+}
+
+.small-card {
+    
+    width: 100px;
+    display: inline-block;
+    /* background-color: rgba(251, 175, 93, 0.75); */
+    
+}
+.faq {
+    color: white;
+}
+
+.faq h5 {
+    font-size: 2rem;
+}
+.faq a {
+    color:whitesmoke;
+    text-decoration:underline;
+    font-size: 20px;
+}
+.accordion  {
+    background-color: #0C2147;
+    width: 85%;
+    --bs-accordion-active-bg: #142337;
+    --bs-accordion-active-color: white;
+    --bs-accordion-border-radius: 1rem;
+}
+ .accordion-button {
+    background-color: #182846;
+    color: white;
+}
