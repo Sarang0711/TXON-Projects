@@ -1,0 +1,48 @@
+body {
+    background: #EFE47D;
+    background: -webkit-radial-gradient(bottom, #EFE47D, #F27835);
+    background: -moz-radial-gradient(bottom, #EFE47D, #F27835);
+    background: radial-gradient(to top, #EFE47D, #F27835);
+}
+.calci{
+    margin:3rem auto;
+    padding:50px;
+    width: 25%;
+    background-color: #253443;
+    /* background-color: #dadcdd; */
+    border-radius: 1rem;
+}
+#screen {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    width: 13rem;
+    border-radius: 10px;
+    background-color: #b5b5b5;
+}
+
+td {
+    padding: 10px 10px 10px 0;
+
+}
+.btn{
+    width:2.5rem;
+    padding: 5px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 0.6rem;
+    background: #253443;
+    box-shadow: 14px 14px 28px #0e1216,
+                -14px -14px 28px #2b3c4d;
+}
+
+.operators {
+    color: #ea822d;
+}
+.equal {
+    background-color: #ea822d;
+    width: 6em;
+}
+
+/* .darkTheme {
+
+} */

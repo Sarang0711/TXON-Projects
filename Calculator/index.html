@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- fontawesome icons  -->
+  <script src="https://kit.fontawesome.com/c5885dd5c9.js" crossorigin="anonymous"></script>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calci">
+        <table>
+            <!-- <i class="theme-toggler fa-solid fa-2x fa-toggle-off"></i> -->
+            <tr>
+                <td colspan="4"><input type="text" id="screen"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn operators" value="AC" onclick="allClr()"></td>   
+                <td><input type="button" class="btn operators" value="x" onclick="clr()"></td>
+                <td><input type="button" class="btn operators" value="%" onclick="display('%')"></td>
+                <td><input type="button" class="btn operators" value="*" onclick="display('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="7" onclick="display('7')"></td>
+                <td><input type="button" class="btn" value="8" onclick="display('8')"></td>
+                <td><input type="button" class="btn" value="9" onclick="display('9')"></td>
+                <td><input type="button" class="btn operators"value="/" onclick="display('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="4" onclick="display('4')"></td>
+                <td><input type="button" class="btn" value="5" onclick="display('5')"></td>
+                <td><input type="button" class="btn" value="6" onclick="display('6')"></td>
+                <td><input type="button" class="btn operators" value="-" onclick="display('-')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="1" onclick="display('1')"></td>
+                <td><input type="button" class="btn" value="2" onclick="display('2')"></td>
+                <td><input type="button" class="btn" value="3" onclick="display('3')"></td>
+                <td><input type="button" class="btn operators" value="+" onclick="display('+')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="0" onclick="display('0')"></td>
+                <td><input type="button" class="btn" value="." onclick="display('.')"></td>
+                <td colspan="2"><input type="button" class="btn equal" value="=" onclick="equate()"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
