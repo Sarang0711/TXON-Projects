@@ -35,6 +35,10 @@ td {
 
 }
 
+.btn:active {
+    transform: translateY(0.2em);
+}
+
 .operator {
     color: #ea822d;
 }
@@ -46,6 +50,6 @@ td {
 .darkTheme {
     background-color: #253443;
     color: whitesmoke;
-    box-shadow:  6px 6px 11px #161f28,
+    box-shadow:  6px 6px 11px #161f16,
                 -6px -6px 11px #34495e;
 }
