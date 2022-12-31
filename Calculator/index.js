@@ -17,14 +17,30 @@ function equate(){
     document.getElementById("screen").value = result;
 }
 
-// var toggler = document.querySelector(".theme-toggler");
-// var btn = document.querySelectorAll(".btn");
+var toggler = document.querySelector(".theme-toggler");
 //  console.log(toggler.classList);
-// toggler.addEventListener("click", changeTheme);
+var calci = document.querySelector(".calci");
+var btn = document.querySelectorAll(".btn");
+var operator = document.querySelectorAll(".operator");
+var equal = document.querySelector(".equal");
 
-// function changeTheme() {
-//     toggler.classList.toggle("fa-toggle-off");
-//     toggler.classList.toggle("fa-toggle-on");
-//     toggler.classList.toggle("darkTheme");
-//     console.log(toggler.classList);
-// }
+toggler.addEventListener("click", changeTheme);
+
+function changeTheme() {
+    toggler.classList.toggle("fa-toggle-off");
+    toggler.classList.toggle("fa-toggle-on");
+    calci.classList.toggle("darkTheme");
+    // console.log(toggler.classList);
+    // console.log(btn.classList);
+
+    btn.forEach((btn)=> {
+        btn.classList.toggle("darkTheme");
+    });
+    
+    operator.forEach((operator)=> {
+        operator.style.color = "#ea822d";
+    });
+
+    equal.style.backgroundColor = "#ea822d";
+
+}
