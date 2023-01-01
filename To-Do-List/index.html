@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To Do List</h1>
+
+    <form>
+        <label for="task">Task</label>
+        <input type="text" name="task" id="task">
+        <br>
+        <label for="time">Time Allocated(in Hr)</label>
+        <input type="range" name="time" id="time" min="0" max="24" oninput="this.nextElementSibling.value=this.value + ' Hr'">
+        <output>12 Hr</output>
+        <br>
+        <!-- <label for="deadline">Deadline</label>
+        <input type="date">
+        <br> -->
+        <label for="reward">Reward</label>
+        <input type="text" list="rewards" name="reward" id="reward">
+            <datalist id="rewards">
+                <option value="Coffee">
+                <option value="Movie">                
+                <option value="Dinner">
+                <option value="Music">            
+            </datalist>
+        <br>
+        <label for="priority">Priority</label>
+        <br>
+        <input type="radio" id="imp-urg" name="priority" value="Important & Urgent">
+        <label for="imp-urg">Important & Urgent</label>
+        <br>
+        <input type="radio" id="imp-not-urg" name="priority" value="Important & Not Urgent">
+        <label for="imp-not-urg">Important & Not Urgent</label>
+        <br>
+        <input type="radio" id="not-imp-urg" name="priority" value="Not Important But Urgent">
+        <label for="not-imp-urg">Not Important But Urgent</label>
+        <br>
+        <input type="radio" id="not-imp-not-urg" name="priority" value="Not Important & Not Urgent">
+        <label for="not-imp-not-urg">Not Important & Not Urgent</label>
+        <br>
+        <input type="button" value="Add To List" onclick="addToList()">
+        <input type="reset" value="Reset">
+    </form>
+
+    <p id="pt1"></p>
+    <p id="pt2"></p>
+
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
