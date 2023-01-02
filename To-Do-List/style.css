@@ -2,3 +2,18 @@ body {
     background: radial-gradient(circle, #C069F1, #5495B3);
     padding: 3rem;
 }
+
+.col-md-4 {
+    background-color: orange;
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+}
+.row {
+    margin: 10px;
+}
+.r1 .r2 {
+    position: fixed;
+    right: 79px;
+    top: 1rem;
+}

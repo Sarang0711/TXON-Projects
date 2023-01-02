@@ -8,5 +8,5 @@ function addToList(){
     // console.log(ft.value);
     // console.log(pty[0].input.value);
     pt1.innerHTML = ft.value;
-    pt2.innerHTML = pty.value;
+    // pt2.innerHTML = pty.value;
 }
